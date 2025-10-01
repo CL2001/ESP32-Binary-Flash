@@ -26,7 +26,7 @@ pio --version
 1. Compile the Firmware
 Compile using the following command
 ```bash
-pio run --project-dir ./firmware -e esp32doit-devkit-v1
+pio run --project-dir ./firmware
 ```
 
 
@@ -60,7 +60,7 @@ sudo apt install python3-poetry
 ## Run
 ```bash
 poetry install
-poetry run esptool --chip esp32-s3 --port /dev/ttyACM0 --baud 115200 write-flash -z 0x1000 firmware/.pio/build/esp32s3-wroom-1-n16r8/firmware.bin
+poetry run esptool --chip esp32s3 --port /dev/ttyACM0 --baud 115200 write_flash -z 0x0000 ./firmware/.pio/build/esp32s3-wroom-1-n16r8/bootloader.bin 0x8000 ./firmware/.pio/build/esp32s3-wroom-1-n16r8/partitions.bin 0x10000 ./firmware/.pio/build/esp32s3-wroom-1-n16r8/firmware.bin
 ```
 
 
