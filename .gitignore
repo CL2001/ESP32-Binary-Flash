@@ -1,7 +1,6 @@
-firmware/.pio/build/project.checksum
-firmware/.pio/build/esp32doit-devkit-v1/*
-!firmware/.pio/build/esp32doit-devkit-v1/firmware.bin
+firmware/.pio/
 firmware/.vscode/.browse.c_cpp.db*
 firmware/.vscode/c_cpp_properties.json
 firmware/.vscode/launch.json
 firmware/.vscode/ipch
+poetry.lock
